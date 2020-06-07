@@ -1,0 +1,44 @@
+@import 'variables';
+
+@mixin button($color: $button-active) {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
+  text-align: center;
+  color: $button-color;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: all .3s;
+
+  & i {
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: $bgc;
+    transition: all .3s;
+  }
+
+  &:active,
+  &.active {
+    color: $color;
+    transition: all .3s;
+  }
+
+  &:focus {
+    @include outline();
+  }
+
+
+}
+
+@mixin outline {
+  box-shadow: 0 2px 4px 0 rgba(10, 10, 206, 0.2), 0 0 0 2px rgba(9, 38, 206, 0.25);
+  transition: all .3s;
+}
