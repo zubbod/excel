@@ -6,6 +6,7 @@
   position: absolute;
   left: 0;
   right: 0;
+  height: $formula-height;
   top: $header-height + $toolbar-height;
   display: flex;
   align-items: center;
@@ -22,7 +23,6 @@
 
   .edit {
     padding: 0 8px;
-    height: 100%;
     width: 100%;
     outline: none;
     color: $black;
