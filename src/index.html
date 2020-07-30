@@ -13,78 +13,42 @@
 
 <body>
 
-  <div id="app" class="container">
-    <div class="excel">
-      <div class="excel__header">
-        <input type="text" class="input" value="Новая таблица">
-        <div>
-          <button class="button-delete">
-            <span class="material-icons">
-              delete
-            </span>
-          </button>
-          <button class="button">
-            <span class="material-icons">
-              exit_to_app
-            </span>
-          </button>
+  <div id="app">
+
+    <div class="db">
+
+      <div class="db__header">
+        <h1>Excel Dashboard</h1>
+      </div>
+
+      <div class="db__new">
+        <div class="db__view">
+          <a href="#" class="db__create">New Table</a>
         </div>
       </div>
-      <div class="excel__toolbar">
-        <button class="button">
-          <span class="material-icons">
-            format_align_right
-          </span>
-        </button>
-        <button class="button">
-          <span class="material-icons">
-            format_align_center
-          </span>
-        </button>
-        <button class="button">
-          <span class="material-icons">
-            format_align_left
-          </span>
-        </button>
-        <button class="button">
-          <span class="material-icons">
-            format_bold
-          </span>
-        </button>
-        <button class="button">
-          <span class="material-icons">
-            format_italic
-          </span>
-        </button>
-        <button class="button">
-          <span class="material-icons">
-            format_underlined
-          </span>
-        </button>
-      </div>
-      <div class="excel__formula">
-        <div class="label">fx</div>
-        <div class="edit" contenteditable spellcheck="false"></div>
-      </div>
-      <div class="excel__table">
-        <div class="row">
-          <div class="row-info"></div>
-          <div class="row-data">
-            <div class="column">A</div>
-            <div class="column">B</div>
-            <div class="column">C</div>
-          </div>
+
+      <div class="db__table db__view">
+
+        <div class="db__list-header">
+          <span>Name</span><span>Open Date</span>
         </div>
-        <div class="row">
-          <div class="row-info">1</div>
-          <div class="row-data">
-            <div class="cell selected" contenteditable="" >A1</div>
-            <div class="cell" contenteditable="" >B1</div>
-            <div class="cell" contenteditable="" >C1</div>
-          </div>
-        </div>
+
+        <ul class="db__list">
+          <li class="db__record">
+            <a href="#">Table 1</a>
+            <strong>21.10.2020</strong>
+          </li>
+
+          <li class="db__record">
+            <a href="#">Table 2</a>
+            <strong>18.06.2020</strong>
+          </li>
+        </ul>
+
       </div>
+
     </div>
+
   </div>
 
 </body>

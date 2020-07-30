@@ -42,3 +42,9 @@
   box-shadow: 0 2px 4px 0 rgba(10, 10, 206, 0.2), 0 0 0 2px rgba(9, 38, 206, 0.25);
   transition: all .3s;
 }
+
+@mixin clear-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
